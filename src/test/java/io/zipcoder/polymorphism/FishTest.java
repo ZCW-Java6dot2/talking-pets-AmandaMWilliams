@@ -20,4 +20,17 @@ public class FishTest {
         Assert.assertEquals(expectedPetName, actualPetName);
         Assert.assertEquals(expectedPetType, actualPetType);
     }
+
+    @Test
+    public void fishSpeakTest(){
+        // Given
+        Fish fish = new Fish(null, null);
+        String expectedSpeakOutput = "Glub glub!";
+
+        // When
+        String actualSpeakOutput = fish.speak();
+
+        // Then
+        Assert.assertEquals(expectedSpeakOutput, actualSpeakOutput);
+    }
 }

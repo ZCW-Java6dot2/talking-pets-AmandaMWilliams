@@ -21,4 +21,17 @@ public class CatTest {
         Assert.assertEquals(expectedPetType, actualPetType);
     }
 
+    @Test
+    public void catSpeakTest(){
+        // Given
+        Cat cat = new Cat(null, null);
+        String expectedSpeakOutput = "Meow!";
+
+        // When
+        String actualSpeakOutput = cat.speak();
+
+        // Then
+        Assert.assertEquals(expectedSpeakOutput, actualSpeakOutput);
+    }
+
 }
