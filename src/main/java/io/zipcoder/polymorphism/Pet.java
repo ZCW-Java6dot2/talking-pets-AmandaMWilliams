@@ -25,5 +25,9 @@ public class Pet {
     public String getPetName() {
         return petName;
     }
+
+    public String speak(){
+        return "Hello, Human...";
+    }
 }
 

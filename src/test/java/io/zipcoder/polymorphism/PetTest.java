@@ -48,4 +48,17 @@ public class PetTest {
         // Then
         Assert.assertEquals(expectedPetType, actualPetType);
     }
+
+    @Test
+    public void speakMethodTest(){
+        // Given
+        Pet pet = new Pet(null, null);
+        String expectedSpeakOutput = "Hello, Human...";
+
+        // When
+        String actualSpeakOutput = pet.speak();
+
+        // Then
+        Assert.assertEquals(expectedSpeakOutput, actualSpeakOutput);
+    }
 }
